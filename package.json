@@ -8,6 +8,14 @@
     "lint": "turbo lint",
     "test": "turbo test",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "bootstrap": "bash scripts/bootstrap.sh",
+    "validate": "bash scripts/validate.sh",
+    "validate:fix": "bash scripts/validate.sh --fix",
+    "infra:up": "docker compose up -d --wait",
+    "infra:down": "docker compose down",
+    "infra:logs": "docker compose logs -f",
+    "db:migrate": "pnpm --filter @nija/db db:migrate",
+    "db:studio": "pnpm --filter @nija/db db:studio",
     "prepare": "husky"
   },
   "devDependencies": {
