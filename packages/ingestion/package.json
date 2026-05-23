@@ -1,0 +1,18 @@
+{
+  "name": "@nija/ingestion",
+  "version": "0.0.1",
+  "private": true,
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "lint": "echo 'No lint configured'",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@nija/hashing": "workspace:*",
+    "@nija/shared-types": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  }
+}
