@@ -294,8 +294,8 @@ Copy `.env.example` to `.env` and fill in the values.
 | -------------------------------- | -------- | -------------------------------------- |
 | `DATABASE_URL`                   | ✅       | Postgres connection URL                |
 | `SUPABASE_URL`                   | ✅       | Supabase project URL                   |
-| `SUPABASE_ANON_KEY`              | ✅       | Supabase anon (public) key             |
-| `SUPABASE_SERVICE_ROLE_KEY`      | ✅       | Supabase service role key              |
+| `SUPABASE_PUBLISHABLE_KEY`       | ✅       | Supabase publishable key for clients   |
+| `SUPABASE_SECRET_KEY`            | ✅       | Supabase secret key for server usage   |
 | `REDIS_URL`                      | ✅       | Redis connection URL                   |
 | `API_PORT`                       | —        | API server port (default: `3001`)      |
 | `NODE_ENV`                       | —        | `development` / `test` / `production`  |

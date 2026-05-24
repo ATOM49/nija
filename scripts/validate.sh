@@ -28,7 +28,7 @@ FAILURES=()
 run_step() {
   local label="$1"
   shift
-  info "$label…"
+  info "${label}..."
   if "$@"; then
     success "$label passed."
   else
