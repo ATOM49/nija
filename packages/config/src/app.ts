@@ -1,0 +1,30 @@
+export const APP_CONFIG = {
+  name: 'nija',
+  version: '0.0.1',
+  queues: {
+    ingest: 'nija-ingest',
+    dedupe: 'nija-dedupe',
+    extract: 'nija-extract',
+    claims: 'nija-claims',
+    retrieve: 'nija-retrieve',
+    verdict: 'nija-verdict',
+    moderation: 'nija-moderation',
+    cleanup: 'nija-cleanup',
+    notifications: 'nija-notifications',
+  },
+  limits: {
+    maxTextLength: 50_000,
+    maxUrlLength: 2048,
+    maxImageSizeMb: 10,
+    maxVideoSizeMb: 100,
+    maxAudioSizeMb: 50,
+    maxVideoMinutes: 10,
+    rateLimitPerMinute: 10,
+  },
+  retention: {
+    defaultRawUploadDays: 7,
+    defaultTranscriptDays: 30,
+    defaultEvidenceDays: 90,
+    defaultVerdictDays: 365,
+  },
+} as const;
